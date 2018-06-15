@@ -1,0 +1,77 @@
+<html lang="en"><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Quadratic Equation</title>
+    <link href="style.css" rel="stylesheet"/>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+
+  <body onload="init();">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="top">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Easy Mathematics</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" id = "ok">
+      <h2><strong id="hd">Second Degree Equations</strong></h2>
+
+      <div class="well">
+          <h3><strong>Quadratic Equation:
+              <span id="a">a</span>x
+              <sup>2</sup> +
+              <span id="b">b</span>x +
+              <span id="c">c</span>
+              <strong>
+          </h3>
+          <div>
+          <h3><strong>
+            Steps for finding roots of the 2<sup>nd</sup> degree equation
+            <strong>
+          </h3>
+          <h4>First you have to find the <strong>Discriminant</strong> of the equation i.e. D</h4>
+            <p>Now D = b<sup>2</sup> - 4*a*c </p>
+          <div id="tbb">
+        <p>1. <em>b</em><sup>2</sup> −4<em>ac </em>&lt;0  <strong>There are no real roots</strong>. </p>
+        <p>2. <em>b</em><sup>2</sup> −4<em>ac</em> = 0 <strong> There is one real root.</strong> </p>
+        <p>3. <em>b</em><sup>2</sup> −4<em>ac </em>&gt; 0  <strong>There are two real roots.</strong> </p></td>
+      </div>
+<h3><strong>Formula to find the real root of quadratic equation</strong></h3>
+<p><img src="http://www.biology.arizona.edu/biomath/tutorials/quadratic/images/rootseqn5.gif" alt="x =( -b + or - (square root (b^2 -4ac))/2a" width="270" height="150"> </p>
+
+        </div>
+          <h1 id="ss"><strong>Enter the coefficients of a, b and c in the field below</strong></h1>
+
+          <div class="form-group">
+              <label for="valueA">Value of a: </label>
+              <input type="number" min="0"class="form-control" id="valueA" onchange="updateEquation()" placeholder="Enter the value of A">
+          </div>
+          <div class="form-group">
+              <label for="valueB">Value of b: </label>
+              <input type="number" min="0" class="form-control" id="valueB" onchange="updateEquation()" placeholder="Enter the value of B">
+          </div>
+          <div class="form-group">
+              <label for="valueC">Value of c: </label>
+              <input type="number" min="0" class="form-control" id="valueC" onchange="updateEquation()" placeholder="Enter the value of C">
+          </div>
+          <button class="button" onclick="solve()">Solve Equation</button>
+      </div>
+
+      <div class="well">
+          Resut:
+          <span id="result"></span>
+      </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+
+
+
+</body></html>
